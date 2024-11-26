@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_2</title>
+    <link href=".\style.css" rel="stylesheet">
+</head>
+
+<body>
+    <u>
+        <h2>Heading tags</h2>
+    </u>
+    <!--Heading tag-->
+
+    <h1>1. Heading tag 1</h1>
+    <h2>2. Heading tag 2</h2>
+    <h3>3. Heading tag 3</h3>
+    <h4>4. Heading tag 4</h4>
+    <h5>5. Heading tag 5</h5>
+    <h6>6. Heading tag 6</h6>
+    <!--Heading tags are used to show that something is important. h1 tag having highest level importance
+    similarly followed by other tags repectively-->
+
+
+    <u>
+        <h2>Formatting Tags</h2>
+    </u>
+    <!-- Formatting tags -->
+    <!--Formatting tags are inlie tags show when you write they appear next to each other-->
+
+    1. <b>Bold text</b>
+    2. <strong>Upgraded version of bold to show something is more important than just bold</strong>
+    3. <i>Itallic text</i>
+    4. <em>To give emphasison word or topic than just highliting with itallic</em>
+    5. <u>Underline</u>
+    6. <s>Strikethrogh</s>
+    7. <small>Small text</small>
+    8. <big>big text - but this tag is not more used</big>
+    9. Normal text
+    10. To add subscript you use sub tag, for ex, you can write h20 as h<sub>2</sub>0
+    11. To add superscript you use sup tag, for ex, you can write 5*10^6 as 5*10<sup>6</sup>
+    <!-- Formatting tags are used to format the text whenevre needed to show someting
+    is important or different than normal text -->
+
+
+    <u>
+        <h2>Common tags needed to create HTML document</h2>
+    </u>
+    <!--common tags needed to create HTML document-->
+
+    1. <div> it is block level tag and mostly used tag in a webpage & it is used to group the elements</div>
+
+    2. <span>span tag is inline tag which is used to group text or words so that you can give specific CSS to that words
+        only</span>
+
+    3. <p>Pragraph tag is used to write a paragraph</p>
+
+    4. <div>
+        <img src="abc photo" height="500px" title="tiltle for the image, ex - The beagle dog"
+            alt="alternative text for that image if something went wrong in loading image, ex - Beagle dog image">
+    </div>
+
+    5. <div>
+        <a href="https://www.google.com">Anchor tag, to create clickable link</a>
+    </div>
+    <!-- image tag (img) and anchor tag(a) are inline tags -->
+
+    6. <p id="headings">Id tag is used to find specific element as per id. You can give only one id to the element,
+        by using the id name you can access that element in CSS.
+    </p>
+
+    7. <div id="car">
+        <p class="sedan">i. Hyundai Verna</p>
+        <p class="sedan">ii. Mercedes-Benz AMG C 63 S E</p>
+        <p class="SUV">iii. Hyundai Creta</p>
+        <p class="SUV">iv. Tata Harrier</p>
+        <!-- Suppose you want to acess elemnts with specific class only then you can use class attribute
+         class attribute can be used for multiple elements -->
+    </div>
+
+    8. lists
+    <div>
+        i. ordered lists
+        <ol type="1">
+            <li>samsung M31</li>
+            <li>Redmi 12</li>
+            <li>oppo reno 11</li>
+        </ol>
+        <!-- default type is 1, other types are A,a,I,i -->
+
+        ii. unorderd lists
+        <ul type="disc">
+            <li>Burger</li>
+            <li>Pizza</li>
+            <li>French fries</li>
+        </ul>
+        <!-- default type is disc(filled circle), other types are circle, square -->
+
+        iii. description lists
+        <dl>
+            <dt>1. description term</dt>
+            <dd>description definition 1</dd>
+
+            <dt>2. description term</dt>
+            <dd>description definition 2</dd>
+        </dl>
+    </div>
+
+
+    <u>
+        <h2>Table related tags to create table</h2>
+    </u>
+    <table border="1">
+        <caption>related caption for table, ex - Invoice of mobile</caption>
+        <!-- first row showing heading/titles of tables -->
+        <tr>
+            <th scope="col">Sr No</th>
+            <th scope="col">Mobile name</th>
+            <th scope="col">Price</th>
+            <th scope="col">discount in %</th>
+        </tr>
+
+        <!-- second row indicating data for 1st mobile -->
+        <tr>
+            <td>1</td>
+            <td>Samsumg M31</td>
+            <td>16,000</td>
+            <td>20</td>
+        </tr>
+
+        <!-- Third row indicating data for 2nd mobile -->
+        <tr>
+            <td>2</td>
+            <td>oppo reno 11</td>
+            <td>29,000</td>
+            <td>15</td>
+        </tr>
+
+        <!-- fortth row indicating data for 3rd mobile -->
+        <tr>
+            <td>3</td>
+            <td>Redmi 12</td>
+            <td rowspan="2">20,000</td>
+            <td rowspan="2">5</td>
+        </tr>
+
+        <!-- fifth row indicating data for extra gift from redmi -->
+        <tr>
+            <td colspan="2">Free gift - Redmi wtach 3</td>
+        </tr>
+
+        <!--6th row indicating data of total amount of all 3 mobiles -->
+        <tr>
+            <td colspan="2">Total</td>
+            <td colspan="2">65,000</td>
+        </tr>
+
+        <!--Final/7th row indicating data of total amount after discount of all 3 mobiles -->
+        <tr>
+            <td colspan="2">Total amount to pay after discount</td>
+            <td colspan="2">56,450</td>
+        </tr>
+    </table>
+
+    <u>
+        <h2>Form and related tags to create a form</h2>
+    </u>
+    <form action="" method="">
+        <!-- action attribute is used to show the location where you want to send the data or form -->
+        <!-- method attribute is used to show, by which method you want to send the data -->
+
+        <div>
+            <label for="text_data">Text data - you can write anything</label>
+            <input type="text" name="any_text_data" id="text_data" placeholder="You can write anything" required>
+        </div>
+        <!-- name attribute not show anything on webpage but it is used in the backend to show which 
+         type of data user is filling wheather its his/her name, phone number, email, etc -->
+        <!-- id attribute is helpful for adding CSS later but here (in form) it is used to link 
+         label with the input type, so if you clicked on label, it creates a dark solid border to 
+        show related input field to be filled for that paraticular field only-->
+        <!-- required attribute is used whenever you want user to compulsory fill that data -->
+
+        <div>
+            <label for="mob_no">mobile number</label>
+            <input type="number" name="user_mob_no" id="mob_no" placeholder="9564845216">
+        </div>
+
+        <div>
+            <label for="user_email">email</label>
+            <input type="email" name="user_email" id="user_email" placeholder="abhi1565@gmail.com">
+        </div>
+        <!-- it verifies if user write correct format of email, it checks if @ used or not -->
+
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="user_password" id="password">
+        </div>
+
+        <div>
+            <label for="date">date</label>
+            <input type="date" name="date_of_form_filling" id="date">
+        </div>
+
+        <div>
+            <label for="income_certificate">Upload File</label>
+            <input type="file" name="income_certificate" id="income_certificate">
+        </div>
+
+        <div>
+            <label for="fav_color">pick color</label>
+            <input type="color" name="user_fav_color" id="fav_color">
+        </div>
+
+        <div>
+            <label for="payscale">select range</label>
+            <input type="range" name="user_payscale" id="payscale" min="0" max="100" value="20" step="10">
+        </div>
+        <!-- value attribute used here to show that value range on webpage instead of default range -->
+
+        <div>
+            <label>radion button, ex - gender</label>
+            <input type="radio" name="gender" value="male">
+            <label>male</label>
+            <input type="radio" name="gender" value="female">
+            <label>female</label>
+        </div>
+        <!-- In this case of radio button, value attribute is used to give value in the backend.
+         Beacause user only can select the button which does not have any value or here user
+         is not giving any written input so we manually have to write value for that radio button
+         so that when user selcts that button its value can be assigned at backend -->
+        <!-- In this case, to select any one radio button you have to give same name attribute 
+         so that in the backend, name attribute can store any one value of that field  -->
+
+        <div>
+            <label for="is_subscribed">Checkbox, ex - is subscribed?</label>
+            <input type="checkbox" name="is_user_subscribed?" id="is_subscribed" value="yes" checked>
+        </div>
+        <!-- ask a doubt how can backend know if user is not subscribed? how to write value for it? -->
+
+        <div>
+            <span>1. sigle dropdown selection - </span>
+            <label for="fav_destination">Favourite destination</label>
+            <select name="fav_destination" id="fav_destination">
+                <option value="Pune">Pune</option>
+                <option value="Karad">Karad</option>
+                <option value="Islampur" selected>Islampur</option>
+                <option value="Patan">Patan</option>
+            </select><br>
+            <!-- selected attribute is used to show that option on webpage screen -->
+
+            <span>2. Multiple dropdown selection</span>
+            <label for="fav_destination">Favourite destination</label>
+            <select name="fav_destination" id="fav_destination" multiple>
+                <option value="Pune">Pune</option>
+                <option value="Karad">Karad</option>
+                <option value="Islampur">Islampur</option>
+                <option value="Patan">Patan</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="cust_feedback">Feedback</label>
+            <textarea name="cust_feedback" id="cust_feedback" rows="5" cols="100"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </div>
+
+        <!-- All input tags, label tag, select tag, textarea tag are inline tags -->
+
+    </form>
+</body>
+
+</html>

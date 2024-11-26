@@ -1,0 +1,77 @@
+/* CSS selectors */
+
+/*1.  Universal selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*2.  Type selector */
+h1{
+    background-color: red;
+    text-align: left;
+}
+
+/* 3. Id selector */
+#mob_no{
+    border: solid red 2px;
+}
+
+/* 4. Class selector */
+.sedan{
+    color: blue;
+    background-color: bisque;
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.note{
+    color: red;
+    background-color: black;
+}
+
+/* 5. Attribute selector */
+p[class="SUV"]{
+    color: rgb(86, 125, 147);
+    background-color: rgb(27, 27, 7);
+    margin: 10px;
+    padding: 10px;
+    width: fit-content;
+}
+
+/* suppose you have 1000 input fileds and out of which you have 10 input fields with type="text"
+so, if you want to select all that input field having certain attribute type i.e in this case
+type="text" then we can use attribute selector */
+
+input[type="text"]{
+    border: solid violet 2px;
+}
+
+/* 6. Combinator selectors */
+/* i. Descendant selector - selcts all child elements of that parent element regardless of
+any level of nesting */
+div[id="descendant"] p{
+    color: brown;
+    background-color:bisque
+}
+
+/* ii. child selector - selcts only direct child elements of that parent element */
+#child > p{
+    color: darkmagenta;
+    background-color: aquamarine;
+}
+
+/* iii. Adjucent sibling selector - selcts only one neibhour sibling element of that above 
+sibling element */
+
+.A_sibling + p{
+    color: rgb(6, 77, 6);
+    background-color: bisque;
+}
+
+/* General sibling selector - selcts all neibhour sibling elements of that above sibling
+      element */
+div[class="G_sibling"] ~ p{
+    color: darkorange;
+    background-color: grey;
+}
